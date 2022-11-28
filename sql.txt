@@ -40,6 +40,6 @@ year INTEGER(4) NOT NULL
 
 CREATE TABLE IF NOT EXISTS Mix_2(
 collection_id INTEGER REFERENCES Collection(id),
-song_id INTEGER REFERENCES Song(id),
-CONSTRAINT jk PRIMARY KEY(collection_id, song_id)
+album_id INTEGER REFERENCES Song(id),
+CONSTRAINT jk PRIMARY KEY(collection_id, album_id)
 )
